@@ -2,14 +2,14 @@
   <div class="home container-fluid">
     <div class="row">
       <div class="col">
-        <h1>Mustache Music</h1>
+        <h1>find your rhythm</h1>
       </div>
     </div>
     <div class="row">
       <div class="col">
         <form class="form-group" @submit.prevent="search">
-          <input type="text" placeholder="Search" v-model="query" required>
-          <button class="btn btn-outline-info" type="submit">Submit</button>
+          <input type="text" placeholder="Search" v-model="query" required><br>
+          <button class="btn btn-outline-info btn-sm" type="submit">Submit</button>
         </form>
       </div>
     </div>
@@ -25,7 +25,7 @@
     name: 'home',
     data() {
       return {
-        query: ''
+        query: '',
       }
     },
 
@@ -42,3 +42,13 @@
     }
   }
 </script>
+
+<style scoped>
+  h1 {
+    color: white
+  }
+
+  input {
+    color: white
+  }
+</style>
